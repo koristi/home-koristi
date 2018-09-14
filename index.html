@@ -9,46 +9,18 @@
     <title>Timo Koriseva</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="./css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="../css/cover.css" rel="stylesheet">
+    <link type="text/css" href="./css/cover.css" rel="stylesheet">
 
     <!-- Add icon library -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  </head>
-
-  <body class="text-center">
-
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">Timo Koriseva</h3>
-          <nav class="nav nav-masthead justify-content-center">
-            <a id="nav-home" class="nav-link active">Home</a>
-            <a id="nav-projects" class="nav-link">Projects</a>
-            <a id="nav-contact" class="nav-link">Contact</a>
-          </nav>
-        </div>
-      </header>
-
-      <main role="main" class="inner cover">
-      </main>
-
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-        </div>
-      </footer>
-    </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+    <!-- Bootstrap core JavaScript -->
+    <script type="JavaScript" src="./js/jquery-3.3.1.min.js"></script>
+    <script type="JavaScript" src="./js/popper.min.js"></script>
+    <script type="JavaScript" src="./js/bootstrap.min.js"></script>
     <script>
       $(document).ready(function() {
         $("main").load("./home.html");
@@ -77,13 +49,32 @@
         $("#nav-projects").toggleClass("active", false);
         $("#nav-contact").toggleClass("active", false);
       });
-
-      $("#btn-projects").click(function() {
-        $("main").load("./projects.html");
-        $("#nav-home").toggleClass("active", false);
-        $("#nav-projects").toggleClass("active", true);
-        $("#nav-contact").toggleClass("active", false);
-      });
     </script>
+  </head>
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Timo Koriseva</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a id="nav-home" class="nav-link active">Home</a>
+            <a id="nav-projects" class="nav-link">Projects</a>
+            <a id="nav-contact" class="nav-link">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main" class="inner cover">
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        </div>
+      </footer>
+    </div>
+
   </body>
 </html>

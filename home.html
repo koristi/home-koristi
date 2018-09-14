@@ -3,3 +3,11 @@
 <p class="lead">
   <a id="btn-projects" href="#" class="btn btn-lg btn-secondary">Learn more</a>
 </p>
+<script>
+$("#btn-projects").click(function() {
+    $("main").load("./projects.html");
+    $("#nav-home").toggleClass("active", false);
+    $("#nav-projects").toggleClass("active", true);
+    $("#nav-contact").toggleClass("active", false);
+  });
+</script>
