@@ -23,8 +23,8 @@
           <h3 class="masthead-brand">Timo Koriseva</h3>
           <nav class="nav nav-masthead justify-content-center">
             <a id="nav-home" class="nav-link active">Home</a>
-            <a id="nav-projects" class="nav-link" href="#">Projects</a>
-            <a id="nav-contact" class="nav-link" href="#">Contact</a>
+            <a id="nav-projects" class="nav-link">Projects</a>
+            <a id="nav-contact" class="nav-link">Contact</a>
           </nav>
         </div>
       </header>
@@ -47,13 +47,13 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
 
     <script>
       $("#nav-projects").click(function() {
-        $("main").load("projects.html");
+        $("main").load("./projects.html");
         $("#nav-home").toggleClass("active", false);
         $("#nav-projects").toggleClass("active", true);
         $("#nav-contact").toggleClass("active", false);
