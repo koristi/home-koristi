@@ -30,11 +30,6 @@
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">My personal projects</h1>
-        <p class="lead">This site is being hosted on Azure Web Apps and here you can find what I've been up to in my spare time.</p>
-        <p class="lead">
-          <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-        </p>
       </main>
 
       <footer class="mastfoot mt-auto">
@@ -52,7 +47,35 @@
     <script src="../js/bootstrap.min.js"></script>
 
     <script>
+      $(document).ready(function() {
+        $("main").load("./home.html");
+        $("#nav-home").toggleClass("active", true);
+        $("#nav-projects").toggleClass("active", false);
+        $("#nav-contact").toggleClass("active", false);
+      });
+
       $("#nav-projects").click(function() {
+        $("main").load("./projects.html");
+        $("#nav-home").toggleClass("active", false);
+        $("#nav-projects").toggleClass("active", true);
+        $("#nav-contact").toggleClass("active", false);
+      });
+
+      $("#nav-contact").click(function() {
+        $("main").load("./contact.html");
+        $("#nav-home").toggleClass("active", false);
+        $("#nav-projects").toggleClass("active", false);
+        $("#nav-contact").toggleClass("active", true);
+      });
+
+      $("#nav-home").click(function() {
+        $("main").load("./home.html");
+        $("#nav-home").toggleClass("active", true);
+        $("#nav-projects").toggleClass("active", false);
+        $("#nav-contact").toggleClass("active", false);
+      });
+
+      $("#btn-projects").click(function() {
         $("main").load("./projects.html");
         $("#nav-home").toggleClass("active", false);
         $("#nav-projects").toggleClass("active", true);
