@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Cover Template for Bootstrap</title>
+    <title>Timo Koriseva</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -22,9 +22,9 @@
         <div class="inner">
           <h3 class="masthead-brand">Timo Koriseva</h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a id="nav-home" class="nav-link active">Home</a>
+            <a id="nav-projects" class="nav-link" href="#">Projects</a>
+            <a id="nav-contact" class="nav-link" href="#">Contact</a>
           </nav>
         </div>
       </header>
@@ -50,5 +50,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+
+    <script>
+      $("#nav-projects").click(function() {
+        $("main").load("projects.html");
+        $("#nav-home").toggleClass("active", false);
+        $("#nav-projects").toggleClass("active", true);
+        $("#nav-contact").toggleClass("active", false);
+      });
+    </script>
   </body>
 </html>
