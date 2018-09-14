@@ -116,11 +116,13 @@ body {
 
 /* Style all font awesome icons */
 .fa {
-  padding: 40px;
-  font-size: 40px;
+  padding: 20px;
+  font-size: 30px;
   width: 50px;
   text-align: center;
   text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
 
 /* Set a specific color for each brand */
