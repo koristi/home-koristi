@@ -7,6 +7,7 @@ a,
 a:focus,
 a:hover {
   color: #fff;
+  text-decoration: none;
 }
 
 /* Custom default button */
@@ -128,22 +129,19 @@ body {
 /* Set a specific color for each brand */
 
 /* Facebook */
-.fa-facebook a {
+.fa-facebook {
   background: #3B5998;
   color: white;
-  text-decoration: none;
 }
 
 /* Twitter */
-.fa-twitter a {
+.fa-twitter {
   background: #55ACEE;
   color: white;
-  text-decoration: none;
 }
 
 /* Linkedin */
-.fa-linkedin a {
+.fa-linkedin {
   background: #0077B5;
   color: white;
-  text-decoration: none;
 }
