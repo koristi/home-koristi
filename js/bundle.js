@@ -7,8 +7,7 @@ require('bootstrap');
 require('popper.js');
 
 $(document).ready(function() {
-    document.getElementsByName("main").innerHTML='<object type="text/html" data="../home.html"></object>';
-    //$("main").load("../home.html");
+    $("main").load("../home.html");
     $("#nav-home").toggleClass("active", true);
     $("#nav-projects").toggleClass("active", false);
     $("#nav-contact").toggleClass("active", false);
@@ -22,21 +21,21 @@ $("#nav-projects").click(function() {
 });
 
 $("#nav-contact").click(function() {
-    $("main").html("../contact.html");
+    $("main").load("../contact.html");
     $("#nav-home").toggleClass("active", false);
     $("#nav-projects").toggleClass("active", false);
     $("#nav-contact").toggleClass("active", true);
 });
 
 $("#nav-home").click(function() {
-    $("main").html("../home.html");
+    $("main").load("../home.html");
     $("#nav-home").toggleClass("active", true);
     $("#nav-projects").toggleClass("active", false);
     $("#nav-contact").toggleClass("active", false);
 });
 
 $("#btn-projects").click(function() {
-    $("main").lhtmload("../projects.html");
+    $("main").load("../projects.html");
     $("#nav-home").toggleClass("active", false);
     $("#nav-projects").toggleClass("active", true);
     $("#nav-contact").toggleClass("active", false);
