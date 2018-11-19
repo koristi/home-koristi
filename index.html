@@ -9,13 +9,15 @@
     <title>Timo Koriseva</title>
 
     <!-- Bootstrap core CSS -->
-    <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link type="text/css" href="css/cover.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Add icon library -->
     <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+    <!-- Custom styles for this template -->
+    <link type="text/css" href="css/cover.css" rel="stylesheet">
+
+    <script src="js/bundle.js"></script>
   </head>
 
   <body class="text-center">
@@ -41,42 +43,5 @@
         </div>
       </footer>
     </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <script>
-      $(document).ready(function() {
-        $("main").load("home.html");
-        $("#nav-home").toggleClass("active", true);
-        $("#nav-projects").toggleClass("active", false);
-        $("#nav-contact").toggleClass("active", false);
-      });
-
-      $("#nav-projects").click(function() {
-        $("main").load("projects.html");
-        $("#nav-home").toggleClass("active", false);
-        $("#nav-projects").toggleClass("active", true);
-        $("#nav-contact").toggleClass("active", false);
-      });
-
-      $("#nav-contact").click(function() {
-        $("main").load("contact.html");
-        $("#nav-home").toggleClass("active", false);
-        $("#nav-projects").toggleClass("active", false);
-        $("#nav-contact").toggleClass("active", true);
-      });
-
-      $("#nav-home").click(function() {
-        $("main").load("home.html");
-        $("#nav-home").toggleClass("active", true);
-        $("#nav-projects").toggleClass("active", false);
-        $("#nav-contact").toggleClass("active", false);
-      });
-    </script>
   </body>
 </html>
