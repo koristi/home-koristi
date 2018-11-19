@@ -14,7 +14,7 @@ $(document).ready(function() {
 });
 
 global.projectsClick = function() {
-    $("main").load("../projects.html");
+    $("main").load("../project.html");
     $("#nav-home").toggleClass("active", false);
     $("#nav-projects").toggleClass("active", true);
     $("#nav-contact").toggleClass("active", false);
@@ -35,7 +35,7 @@ global.homeClick = function() {
 };
 
 global.projectsButtonClick = function() {
-    $("main").load("../projects.html");
+    $("main").load("../project.html");
     $("#nav-home").toggleClass("active", false);
     $("#nav-projects").toggleClass("active", true);
     $("#nav-contact").toggleClass("active", false);
