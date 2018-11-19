@@ -11,30 +11,30 @@ $(document).ready(function() {
     $("#nav-contact").toggleClass("active", false);
 });
 
-$("#nav-projects").click(function() {
+global.projectsClick = function() {
     $("main").load("../projects.html");
     $("#nav-home").toggleClass("active", false);
     $("#nav-projects").toggleClass("active", true);
     $("#nav-contact").toggleClass("active", false);
-});
+};
 
-$("#nav-contact").click(function() {
+global.contactClick = function() {
     $("main").load("../contact.html");
     $("#nav-home").toggleClass("active", false);
     $("#nav-projects").toggleClass("active", false);
     $("#nav-contact").toggleClass("active", true);
-});
+};
 
-$("#nav-home").click(function() {
+global.homeClick = function() {
     $("main").load("../home.html");
     $("#nav-home").toggleClass("active", true);
     $("#nav-projects").toggleClass("active", false);
     $("#nav-contact").toggleClass("active", false);
-});
+};
 
-$("#btn-projects").click(function() {
+global.projectsButtonClick = function() {
     $("main").load("../projects.html");
     $("#nav-home").toggleClass("active", false);
     $("#nav-projects").toggleClass("active", true);
     $("#nav-contact").toggleClass("active", false);
-});
+};
